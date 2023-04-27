@@ -4,9 +4,10 @@
 1) Introducción...................[1](#1)
 2) Contexto histórico.........[2](#2)
 3) Clasificación de EDPs...[3](#3)
-4) EDP de onda.................[4](#4)
-5) EDP de calor..................[5](#5)
-6) EDP de Laplace.............[6](#6)
+4) Casos particulares.........[4](#4)
+5) EDP de onda.................[5](#5)
+6) EDP de calor..................[6](#6)
+7) EDP de Laplace.............[7](#7)
 
 ---
 
@@ -43,8 +44,21 @@ Donde la función u(x,y) es la función solución que cumple la iguialdad.
 Una vez presentada la ecuación general de las ecuaciones en derivadas parciales de segundo orden, ya podemos realizar la clasificación de las mismas:
 * __Hiperbólicas__: $&Delta; = B^2 -AC > 0$
 * __Parabólicas__: $&Delta; = B^2 -AC = 0$
-* <u>Elípticas</u>: $&Delta; = B^2 -AC < 0$
+* __Elípticas__: $&Delta; = B^2 -AC < 0$
     
+## 4. Casos particulares
+En este trabajo nos limitaremos a estudiar estos casos particulares de las EDPs de segundo orden.
+
+#### 1. Ecuaciones hiperbólicas
+Este tipo de ecuaciones representan los fenómenos oscilatorios de diferenete naturaleza como pueden ser: vibraciones de cuerdas o membranas, oscilaciones acústicas de un gas en tubos u oscilaciones electromagnéticas.
+La ecuación más simple de las ecuaciones de vibraciones de la cuerda, ecuación ondulatoria unidimensional. En este tipo hay ecuaciones más complejas en las que intervienen fuerzas externas, vibraciones forzadas.
+Las ecuaciones de onda más sencillas tienen la siguiente forma:
+
+$$
+\begin{aligned}
+\frac{\partial ^2}{\partial t^2} = a^2\frac{\partial ^2}{\partial x^2}
+\end{aligned}
+$$
 
 
 
