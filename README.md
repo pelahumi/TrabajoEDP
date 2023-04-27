@@ -4,9 +4,9 @@
 1) Introducción...................[1]()
 2) Contexto histórico.........[2]()
 3) Clasificación de EDPs...[3]()
-4) EDP de onda..................[4]()
-5) EDP de calor.................[5]()
-6) EDP de Laplace..............[6]()
+4) EDP de onda.................[4]()
+5) EDP de calor..................[5]()
+6) EDP de Laplace.............[6]()
 
 ## 2. Contexto histórico
 Antes de empezar a adentrarnos en la teoría de ecuaciones de ondas, es importante establecer previamente un poco del contexto histórico, y así conocer un poco más sobre sobre la historia de las matemáticas.
