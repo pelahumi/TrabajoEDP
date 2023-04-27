@@ -1,17 +1,15 @@
 # TrabajoEDP
 
 ## Índice
-1) Introducción...................[1](#1)
-2) Contexto histórico.........[2](#2)
-3) Clasificación de EDPs...[3](#3)
-4) Casos particulares.........[4](#4)
-5) EDP de onda.................[5](#5)
-6) EDP de calor..................[6](#6)
-7) EDP de Laplace.............[7](#7)
+1) [Introducción](#1)
+2) [Contexto histórico](#2)
+3) [Clasificación de EDPs](#3)
+4) [Casos particulares](#4)
+5) [Ejercicios resueltos](#5)
 
 ---
 
-## 1. Introducción
+## 1. Introducción<a name="1"></a>
 En este trabajo de profundización se abarcarán los siguientes temas: la clasificación de ecuaciones en derivadas parciales, así como un ejemplo resuelto de cada una de ellas, con la evaluación correspondiente para cada solución con su gráfica. 
 
 ---
@@ -48,7 +46,7 @@ Una vez presentada la ecuación general de las ecuaciones en derivadas parciales
 
 ---
     
-## 4. Casos particulares
+## 4. Casos particulares<a name="4"></a>
 En este trabajo nos limitaremos a estudiar estos casos particulares de las EDPs de segundo orden.
 
 #### 1. Ecuaciones hiperbólicas (ecuaciones de onda)
@@ -86,6 +84,25 @@ $$
 \end{aligned}
 $$
 
+## 5. Ejercicios resueltos<a name="5"></a>
+Para la resolución de los tres ejercicios utilizaremos el Método de Separación de Variables o también conocido como el Método de Fourier.
+
+Veremos que todos los ejercicioes se resuelven de una manera muy similar, sin embargo los resultados obtenidos nos proporcionarán información muy diferente.
+
+### Ejemplo EDP de onda
+Resolver la siguiente EDP:
+
+$$
+\begin{aligned}
+\frac{\partial u^2}{\partial t^2} = 9\frac{\partial u^2}{\partial x^2}
+\end{aligned}
+$$
+
+Con las siguientes condiciones de contorno o frontera:
+
+$$
+u(0,t) = u(4,t) = 0 para t>=0
+$$
 
 
 
