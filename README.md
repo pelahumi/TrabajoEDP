@@ -117,12 +117,84 @@ $$
 \end{align}
 $$
 
+Analizando las condiciones de contorno podemos llegar a la conclusión de que la variable $x$ es la variable espacial y representa la longitud de la cuerda. Por otro lado, vemos que la variable $t$ corresponde a la variable temporal representando así el tiempo. Cabe destacar que este análisis previo debería de hacerse siempre, puesto que las variables no se tienen por que llamar $x$ para la variable espacial y $t$ para la temporal, aunque lo más común es que sí que se utilice dicha notación.
+
+Como mencionamos al principio del epígrafe, usaremos el Método de Separación de Variables (MSV) o Método de Fourier para resolver estas ecuaciones. Dicho método consiste en buscar una solución de la forma:
+
+$$
+u(x,t) = X(x)T(t)
+$$
+
+Una vez propuesta nuestra solución, sustituimos los valores correspondientes en la ecuación inicial:
+
+$$
+\begin{aligned}
+\frac{\partial u}{\partial x} = X´T \implies \frac{\partial u^2}{\partial x^2} = X´´T\\
+\frac{\partial u}{\partial t} = XT´ \implies \frac{\partial u^2}{\partial t^2} = XT´´
+\end{aligned}
+$$
+
+Sustituyendo en la ecuación inicial:
+
+$$
+XT´´ = 9X´´T
+$$
+
+Como podemos ver, esta ecuación si que es de variables separadas, ya que podemos separarlas en los dos miembros de la ecuación de la siguiente forma:
+
+$$
+\frac{T´´}{9T} = \frac{X´´}{X}
+$$
+
+La ecuación reusltante solo puede ser resulta por una constante:
+
+$$
+\frac{T´´}{9T} = \frac{X´´}{X} = \lambda
+$$
+
+Al igualar cada miembro de la ecuación a la constante obtenemos un sistema de dos ecuaciones diferenciales ordinarias (EDOs):
+
+$$
+\left\lbrace
+\begin{aligned}
+X´´ = \lambda X\\
+T´´= 9\lambda T
+\end{aligned}
+\right.
+$$
+
+Aplicamos las condiciones de contorno obtenemos:
+
+$$
+\begin{aligned}
+u(0,t) = X(0)T(t) = 0 \implies X(0) = 0\\
+u(4,t) = X(4)T(t) = 0 \implies X(4) = 0
+\end{aligned}
+$$
+
+Este paso nos asegura que la variable $x$ es la variable espacial, y por tanto aplicaremos el problema de Sturm-Liouville a su EDO para encontrar soluciones que satisfagan las condiciones de contorno (que no sean las triviales).
+
+Buscamos una solución de la forma exponencial (EDO de coeficientes constantes):
+
+$$
+m^2 = \lambda \implies m = \pm \sqrt{\lambda}
+$$
+
+Evaluando los diferentes valores que puede tomar $\lambda$ nos podemos encontrar 3 casos:
+
+1) __$\lambda > 0$:__
+
+Si $\lambda$ es un número positivo, la solución nos quedaría una exponencial de la siguiente forma:
+        
+$$
+\begin{aligned}
+u(x,t) = C1e^{x\sqrt{\lambda}} + C2e^{-x\sqrt{\lambda}}
+\end{aligned}
+$$
 
 
 
-
-
-
+        
 
 
 
