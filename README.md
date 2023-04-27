@@ -43,7 +43,7 @@ Donde la función u(x,y) es la función solución que cumple la iguialdad.
 Una vez presentada la ecuación general de las ecuaciones en derivadas parciales de segundo orden, ya podemos realizar la clasificación de las mismas:
 * __Hiperbólicas__: $&Delta; = B^2 -AC > 0$
 * __Parabólicas__: $&Delta; = B^2 -AC = 0$
-* __Elípticas__: $&Delta; = B^2 -AC < 0$
+* <u>Elípticas</u>: $&Delta; = B^2 -AC < 0$
     
 
 
