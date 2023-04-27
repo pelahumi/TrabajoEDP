@@ -1,14 +1,14 @@
 # TrabajoEDP
 
 ## 1. Índice
-1) Introducción...................[1]()
+1) Introducción...................[1](#1)
 2) Contexto histórico.........[2]()
 3) Clasificación de EDPs...[3]()
 4) EDP de onda.................[4]()
 5) EDP de calor..................[5]()
 6) EDP de Laplace.............[6]()
 
-## 2. Contexto histórico
+## 2. Contexto histórico<a name="1"></a>
 Antes de empezar a adentrarnos en la teoría de ecuaciones de ondas, es importante establecer previamente un poco del contexto histórico, y así conocer un poco más sobre sobre la historia de las matemáticas.
 
 Una de los primeros descubrimientos y aportaciones más importantes sobre las ecuaciones de ondas se remonta al siglo XVIII (año 1750 aprox.), cuando el matemático francés  Jean le Rond d'Alembert empezó a trabajar sobre la teoría de vibraciones y de ondas sobrre una cuerda tensa. D´Alambret desarrolló una ecuación de ondas para replicar la propagación de las ondas en una cuerda infinita y uniforme.\vspace{0.5cm}
