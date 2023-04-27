@@ -33,7 +33,7 @@ Consideremos la siguiente expresion como la ecuación general de las ecuaciones 
 
 $$
 \begin{aligned}
-\frac{\partial^2 u}{\partial x^2}
+A(x,y)\frac{\partial^2 u}{\partial x^2} + 2B(x,y)\frac{\partial^2 u}{\partial x \partial y} + C(x,y)\frac{\partial^2 u}{\partial y^2}
 \end{aligned}
 $$
 
