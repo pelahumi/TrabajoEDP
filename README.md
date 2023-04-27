@@ -101,6 +101,12 @@ $$
 Con las siguientes condiciones de contorno o frontera:
 
 $$
+u(0,t) = u(4,t) = 0; t&ge;0
+$$
+
+Y:
+
+$$
 u(x,0) = 2sin(πx)
 $$
 
