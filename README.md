@@ -17,6 +17,12 @@ En el siglo XIX el matemático Augustin Louis Cauchy continuó al desarrollo de 
 Las EDP de ondas se convirtieron en una herramienta fundamental en la física. Los físicos implementaron dichas ecuaciones para modelar la propagación de ondas electromagnéticas, acústicas y gravitartorias. También se implementaron en el ámbito de la ingeniería para diseñar y optimizar sistemas como antenas, sensores acústicos o dispositivos de comunicación.
 
 En la actualidad se sigue investigando las ecuaciones de ondas en matemáticas y física, y se han desarrollado técnicas más sofisticadas para el cálculo de solucioines, así como comprender mejor su naturaleza. Además, pese a que a muchos les parezca imposible, se han encontrado aplicaciones de las ecuaciones de ondas en otros campos como la medicina (como por ejemplo en la ecografía), la geofísica y la oceanografía, entre otros.
+
 $$
-\int_{0}^{\infty} x^2 dx
+\begin{aligned}
+f(x) &= x^2 \\
+g(x) &= \frac{1}{x} \\
+F(x) &= \int^a_b \frac{1}{3}x^3
+\end{aligned}
 $$
+
