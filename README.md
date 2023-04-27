@@ -4,8 +4,8 @@
 1) Introducción...................[1]()
 2) Contexto histórico.........[2]()
 3) Clasificación de EDPs...[3]()
-4) EDP de onda.................[4]()
-5) EDP de calor..................[5]()
+4) EDP de onda..................[4]()
+5) EDP de calor.................[5]()
 6) EDP de Laplace..............[6]()
 
 ## 2. Contexto histórico
