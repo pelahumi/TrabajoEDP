@@ -64,5 +64,5 @@ $$
 \end{aligned}
 $$
 
-En este caso la constante $a^2$ representa el cociente siguiente: $\frac{T}{&rho;}$, donde T es la tensión de la cuerda y $&rho$ es la densidad lineal de la cuerda.
+En este caso la constante $a^2$ representa el cociente siguiente: $\frac{T}{&rho;}$, donde T es la tensión de la cuerda y $&rho;$ es la densidad lineal de la cuerda.
 
