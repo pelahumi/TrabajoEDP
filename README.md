@@ -101,7 +101,7 @@ $$
 Con las siguientes condiciones de contorno o frontera:
 
 $$
-u(0,t) = u(4,t) = 0 para t>=0
+u(0,t) = u(4,t) = 0; t>=0
 $$
 
 
