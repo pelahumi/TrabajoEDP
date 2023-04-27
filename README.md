@@ -29,12 +29,20 @@ En la actualidad se sigue investigando las ecuaciones de ondas en matemáticas y
 ## 3. Clasificación de las EDPs<a name="3"></a>
 
 ### Ecuación general de las EDPs de segundo orden
-Consideremos la siguiente expresion como la ecuación general de las ecuaciones en derivadas parciales:
+Consideremos la siguiente expresión como la ecuación general de las ecuaciones en derivadas parciales:
 
 $$
 \begin{aligned}
 A(x,y)\frac{\partial^2 u}{\partial x^2} + 2B(x,y)\frac{\partial^2 u}{\partial x \partial y} + C(x,y)\frac{\partial^2 u}{\partial y^2} + a(x,y)\frac{\partial u}{\partial x} + b(x,y)\frac{\partial u}{\partial y} + c(x,y)u(x,y) = f(x,y)
 \end{aligned}
 $$
+Donde la función u(x,y) es la función solución que cumple la iguialdad.
+
+### Clasificación de las EDPs de segundo orden
+Una vez presentada la ecuación general de las ecuaciones en derivadas parciales de segundo orden, ya podemos realizar la clasificación de las mismas:
+
+    1) Hiperbólicas: \Delta
+    
+
 
 
