@@ -41,7 +41,9 @@ Donde la función u(x,y) es la función solución que cumple la iguialdad.
 
 ### Clasificación de las EDPs de segundo orden
 Una vez presentada la ecuación general de las ecuaciones en derivadas parciales de segundo orden, ya podemos realizar la clasificación de las mismas:
-* Hiperbólicas
+* __Hiperbólicas__: $&Delta; = B^2 -AC > 0$
+* __Parabólicas__: $&Delta; = B^2 -AC = 0$
+* __Elípticas__: $&Delta; = B^2 -AC < 0$
     
 
 
