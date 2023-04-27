@@ -101,17 +101,20 @@ $$
 Con las siguientes condiciones de contorno o frontera:
 
 $$
-u(0,t) = u(4,t) = 0; t&ge;0
-$
-Y:
-$
+\left\lbrace
+\begin{array}{ll}
+u(0,t) = u(4,t) = 0 && \text{t&ge;0}\\
 u(x,0) = 2sin(πx)
+\end{array}
+\right.
 $$
 
 Y la siguiente condición inicial:
 
 $$
-\frac{\partial u}{\partial t}(x,0) = 0 ; 0&le;x&le;4
+\begin{align}
+\frac{\partial u}{\partial t}(x,0) = 0  && \text{0&le;x&le;4}
+\end{align}
 $$
 
 
