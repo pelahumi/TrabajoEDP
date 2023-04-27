@@ -51,7 +51,9 @@ En este trabajo nos limitaremos a estudiar estos casos particulares de las EDPs 
 
 #### 1. Ecuaciones hiperbólicas
 Este tipo de ecuaciones representan los fenómenos oscilatorios de diferenete naturaleza como pueden ser: vibraciones de cuerdas o membranas, oscilaciones acústicas de un gas en tubos u oscilaciones electromagnéticas.
+
 La ecuación más simple de las ecuaciones de vibraciones de la cuerda, ecuación ondulatoria unidimensional. En este tipo hay ecuaciones más complejas en las que intervienen fuerzas externas, vibraciones forzadas.
+
 Las ecuaciones de onda más sencillas tienen la siguiente forma:
 
 $$
