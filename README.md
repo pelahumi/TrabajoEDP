@@ -18,5 +18,5 @@ Las EDP de ondas se convirtieron en una herramienta fundamental en la física. L
 
 En la actualidad se sigue investigando las ecuaciones de ondas en matemáticas y física, y se han desarrollado técnicas más sofisticadas para el cálculo de solucioines, así como comprender mejor su naturaleza. Además, pese a que a muchos les parezca imposible, se han encontrado aplicaciones de las ecuaciones de ondas en otros campos como la medicina (como por ejemplo en la ecografía), la geofísica y la oceanografía, entre otros.
 $$
-x^2=5
+\int_{0}^{\infty} x^2 dx
 $$
