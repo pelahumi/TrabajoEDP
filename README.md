@@ -110,7 +110,7 @@ $$
 u(x,0) = 2sin(πx)
 $$
 
-Y estas condiciones iniciales:
+Y la siguiente condición inicial:
 
 $$
 \frac{\partial u}{\partial t}(x,0) = 0 ; 0&le;x&le;4
