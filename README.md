@@ -13,6 +13,8 @@
 ## 1. Introducción
 En este trabajo de profundización se abarcarán los siguientes temas: la clasificación de ecuaciones en derivadas parciales, así como un ejemplo resuelto de cada una de ellas, con la evaluación correspondiente para cada solución con su gráfica. 
 
+---
+
 ## 2. Contexto histórico<a name="2"></a>
 Una de los primeros descubrimientos y aportaciones más importantes sobre las ecuaciones de ondas se remonta al siglo XVIII (año 1750 aprox.), cuando el matemático francés  Jean le Rond d'Alembert empezó a trabajar sobre la teoría de vibraciones y de ondas sobre una cuerda tensa. D´Alambret desarrolló una ecuación de ondas para replicar la propagación de las ondas en una cuerda infinita y uniforme.
 
@@ -29,7 +31,10 @@ En la actualidad se sigue investigando las ecuaciones de ondas en matemáticas y
 ### Ecuación general de las EDPs de segundo orden
 Consideremos la siguiente expresion como la ecuación general de las ecuaciones en derivadas parciales:
 
-
-
+$$
+\begin{aligned}
+\frac{\partial^2 u}{\partial x^2}
+\end{aligned}
+$$
 
 
