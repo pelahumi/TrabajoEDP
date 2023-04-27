@@ -51,7 +51,7 @@ Una vez presentada la ecuación general de las ecuaciones en derivadas parciales
 ## 4. Casos particulares
 En este trabajo nos limitaremos a estudiar estos casos particulares de las EDPs de segundo orden.
 
-#### 1. Ecuaciones hiperbólicas
+#### 1. Ecuaciones hiperbólicas (ecuaciones de onda)
 Este tipo de ecuaciones representan los fenómenos oscilatorios de diferenete naturaleza como pueden ser: vibraciones de cuerdas o membranas, oscilaciones acústicas de un gas en tubos u oscilaciones electromagnéticas.
 
 La ecuación más simple de las ecuaciones de vibraciones de la cuerda, ecuación ondulatoria unidimensional. En este tipo hay ecuaciones más complejas en las que intervienen fuerzas externas, vibraciones forzadas.
@@ -65,4 +65,38 @@ $$
 $$
 
 En este caso la constante $a^2$ representa el cociente siguiente: $\frac{T}{&rho;}$, donde T es la tensión de la cuerda y $&rho;$ es la densidad lineal de la cuerda.
+
+#### 2. Ecuaciones parabólicas (ecuaciones del calor)
+Estas ecuaciones representan la conductividad térmica a lo largo de una varilla. La ecuación más simple es la siguiente:
+
+$$
+\begin{aligned}
+\frac{\partial u}{\partial t} = a^2\frac{\partial u^2}{\partial x^2}
+\end{aligned}
+$$
+
+En este caso la constante $a^2$ representa el cociente siguiente: $\frac{K}{c&rho;}$, donde la $K$ es el coeficiente de conductividad térmica, la $c$ es el calor específico y $&rho;$ represenata la densidad del medio.
+
+#### 3. Ecuaciones elípticas (ecuaciones de Laplace)
+Los procesos a ciclo fijo, cuando la función que buscamos no depende del tiempo, se determinan por las ecuaciones de tipo elíptico, la más común es la ecuación de Laplace, y tienen esta forma:
+
+$$
+\begin{aligned}
+&Delta;u = \frac{\partial u^2}{\partial x^2} + \frac{\partial u^2}{\partial y^2} = 0
+\end{aligned}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
