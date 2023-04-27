@@ -1,8 +1,8 @@
 # TrabajoEDP
 
 ## 1. Índice
-1) Introducción................[1]()
-2) Contexto histórico......[2]()
+1) Introducción...................[1]()
+2) Contexto histórico.........[2]()
 3) Clasificación de EDPs...[3]()
 4) EDP de onda.............[4]()
 5) EDP de calor............[5]()
