@@ -36,6 +36,7 @@ $$
 A(x,y)\frac{\partial^2 u}{\partial x^2} + 2B(x,y)\frac{\partial^2 u}{\partial x \partial y} + C(x,y)\frac{\partial^2 u}{\partial y^2} + a(x,y)\frac{\partial u}{\partial x} + b(x,y)\frac{\partial u}{\partial y} + c(x,y)u(x,y) = f(x,y)
 \end{aligned}
 $$
+
 Donde la función u(x,y) es la función solución que cumple la iguialdad.
 
 ### Clasificación de las EDPs de segundo orden
