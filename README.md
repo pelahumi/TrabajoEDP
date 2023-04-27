@@ -45,6 +45,8 @@ Una vez presentada la ecuación general de las ecuaciones en derivadas parciales
 * __Hiperbólicas__: $&Delta; = B^2 -AC > 0$
 * __Parabólicas__: $&Delta; = B^2 -AC = 0$
 * __Elípticas__: $&Delta; = B^2 -AC < 0$
+
+---
     
 ## 4. Casos particulares
 En este trabajo nos limitaremos a estudiar estos casos particulares de las EDPs de segundo orden.
@@ -62,5 +64,5 @@ $$
 \end{aligned}
 $$
 
-
+En este caso la constante $a^2$ representa el cociente siguiente: $\frac{T}{&rho;}$, donde T es la tensión de la cuerda y $&rho$ es la densidad lineal de la cuerda.
 
