@@ -104,7 +104,7 @@ $$
 \left\lbrace
 \begin{array}{ll}
 u(0,t) = u(4,t) = 0 && \text{t&ge;0}\\
-u(x,0) = 2sin(πx)
+u(x,0) = 2sen(πx)
 \end{array}
 \right.
 $$
@@ -192,14 +192,85 @@ u(x,t) = C1e^{x\sqrt{\lambda}} + C2e^{-x\sqrt{\lambda}}
 \end{aligned}
 $$
 
+Aplicando los resultados que obtuvimos con las condiciones de contorno:
 
+$$
+\left\lbrace
+\begin{aligned}
+X(0) = C1e^{0\sqrt{\lambda}} + C2e^{-0\sqrt{\lambda}} = C1 + C2 = 0\\
+X(4) = u(x,t) = C1e^{4\sqrt{\lambda}} + C2e^{-4\sqrt{\lambda}} = 0
+\end{aligned}
+\right.
+$$
 
-        
+Para resolver el sistema basta con calcular el siguiente determinante:
 
+$$
+\begin{vmatrix}
+1 & 1 \\
+e^{4\sqrt{\lambda}} & e^{-4\sqrt{\lambda}}
+\end{vmatrix} = e^{-4\sqrt{\lambda}} - e^{4\sqrt{\lambda}} = 0
+$$
 
+Haciendo una serie de operaciones obtenemos que:
 
+$$
+e^{4\sqrt{\lambda}} - e^{-4\sqrt{\lambda}} = 0 \implies (e^{4\sqrt{\lambda}} - e^{-4\sqrt{\lambda}})/2 = 0 \implies sinh(4\sqrt{\lambda}) = 0 \iff \lambda = 0
+$$
 
+LLegamos a una contradicción, ya que teniamos como hipótesis que $\lambda < 0$ y para que exista una solución distinta de la trivial $\lambda = 0$.
 
+2) __Caso 2:__ $\lambda = 0$:
+
+En esta caso la solución sería la siguiente: 
+
+$$
+X(x) = C1x + C2
+$$
+
+Aplicamos las condiciones de contorno:
+
+$$
+\left\lbrace
+\begin{aligned}
+X(0) = C2 = 0\\
+X(4) = 4C1 + C2 = 0
+\end{aligned}
+\right. \implies C1 = C2 = 0
+$$
+
+Obtenemos la solución trivial.
+
+3) __Caso 3:__ $\lambda < 0$:
+
+Resolviendo la EDO de coeficientes constantes:
+
+$$
+m = \pm \sqrt{-\lambda} = \pm i\sqrt{|\lambda|}
+$$
+
+La solución de la EDO es una exponencial, pero la podemos expresar como suma de senos y cosenos:
+
+$$
+X(x) = C1sen(x\sqrt{|\lambda|}) + C2cos(x\sqrt{|\lambda|})
+$$
+
+Aplicamos las condiciones de contorno:
+
+$$
+\left\lbrace
+\begin{aligned}
+X(0) = C2 = 0\\
+X(4) = C1sen(4\sqrt{|\lambda|}) + C2cos(4\sqrt{|\lambda|}) = 0 
+\end{aligned}
+\right. \implies C1sen(4\sqrt{|\lambda|}) = 0 \implies sen(4\sqrt{|\lambda|}) = 0 \implies 4\sqrt{|\lambda|} = nπ \ ;\text{$n\in \mathbb{Z}$}
+$$
+
+$$
+\begin{array}{ll}
+\implies \lambda = -(n^2π^2)/16 && \text{$n = 1,2,3,...$}
+\end{array}
+$$
 
 
 
