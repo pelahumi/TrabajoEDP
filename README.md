@@ -182,7 +182,7 @@ $$
 
 Evaluando los diferentes valores que puede tomar $\lambda$ nos podemos encontrar 3 casos:
 
-1) __Caso 1__ $\lambda > 0$:
+1) __Caso 1:__ $\lambda > 0$:
 
 Si $\lambda$ es un número positivo, la solución nos quedaría una exponencial de la siguiente forma:
         
