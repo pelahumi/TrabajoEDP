@@ -6,9 +6,9 @@
 3) [Clasificación de EDPs](#3)
 4) [Casos particulares](#4)
 5) [Ejercicios resueltos](#5)
-    5.1) [Ecuación de ondas](#6)
-    5.2) [Ecuación del calor](#7)
-    5.3) [Ecuación de Laplace](#8)
+    - [Ecuación de ondas](#6)
+    - [Ecuación del calor](#7)
+    - [Ecuación de Laplace](#8)
 
 ---
 
