@@ -252,7 +252,7 @@ $$
 La solución de la EDO es una exponencial, pero la podemos expresar como suma de senos y cosenos:
 
 $$
-X(x) = C1sen(x\sqrt{|\lambda|}) + C2cos(x\sqrt{|\lambda|})
+X(x) = C_{1}sen(x\sqrt{|\lambda|}) + C_{2}cos(x\sqrt{|\lambda|})
 $$
 
 Aplicamos las condiciones de contorno:
@@ -260,10 +260,14 @@ Aplicamos las condiciones de contorno:
 $$
 \left\lbrace
 \begin{aligned}
-X(0) = C2 = 0\\
-X(4) = C1sen(4\sqrt{|\lambda|}) + C2cos(4\sqrt{|\lambda|}) = 0 
+X(0) = C_{2} = 0\\
+X(4) = C_{1}sen(4\sqrt{|\lambda|}) + C_{2}cos(4\sqrt{|\lambda|}) = 0 
 \end{aligned}
-\right. \implies C1sen(4\sqrt{|\lambda|}) = 0 \implies sen(4\sqrt{|\lambda|}) = 0 \implies 4\sqrt{|\lambda|} = nπ \ ;\text{$n\in \mathbb{Z}$}
+\right. \implies C_{1}sen(4\sqrt{|\lambda|}) = 0 \implies sen(4\sqrt{|\lambda|}) = 0
+$$
+
+$$
+\implies 4\sqrt{|\lambda|} = nπ \ ;\text{$n\in \mathbb{Z}$}
 $$
 
 $$
@@ -272,5 +276,38 @@ $$
 \end{array}
 $$
 
+Obteniendo así n autofunciones solución de nuestra EDO. Estas autofuciones $X_{n}(x)$ forman una base ortogonal de un espacio vectorial de dimensión infinita, cuyo producto escalar se define como: 
 
+$$
+\begin{aligned}
+⟨f, g⟩ = ∫_a^b f(x)g(x)w(x)dx
+\end{aligned}
+$$
+
+Donde $w(x)$ es el peso y se calcula:
+
+$$
+w(x) = \frac{a_{2}}{a_{1}} w´(x)
+$$
+
+En nuestro caso:
+
+$$
+w´(x) = 0 \implies w(x) = cte \text{como por ejemplo el 1}
+$$
+
+Para que la base de autofunciones sea lo más fácil de manejar posible, la normalizamos para que sea ortonormal.
+
+$$
+||X_{n}||^2 = ⟨X_{n}, X_{n}⟩ = ∫_0^4 X_{n}^2(x)dx = ∫_0^4 sen^2(\frac{nπx}{4})dx = ∫_0^4 \frac{1-cos(\frac{nπx}{2})}{2}dx = 
+$$
+
+$$
+= \frac{x}{2} - \frac{sen(\frac{nπx}{2})}{4nπ}]_0^4 = 2 \implies ||X_{n}|| = \sqrt{2}
+$$
+
+
+$$
+φ_{n} = \frac{1}{\sqrt{2}} \sum_{n=1}^{\infty}sen(\frac{nπx}{4})
+$$
 
