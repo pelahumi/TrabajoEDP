@@ -177,7 +177,7 @@ $$
 
 Este paso nos asegura que la variable $x$ es la variable espacial, y por tanto aplicaremos el problema de Sturm-Liouville a su EDO para encontrar soluciones que satisfagan las condiciones de contorno (que no sean las triviales).
 
-Buscamos una solución de la forma exponencial (EDO de coeficientes constantes):
+Buscamos una solución de la forma exponencial (EDO de coeficientes constantes) que es problema de Sturm-Liouville:
 
 $$
 m^2 = \lambda \implies m = \pm \sqrt{\lambda}
@@ -296,7 +296,9 @@ $$
 En nuestro caso:
 
 $$
-w´(x) = 0 \implies w(x) = cte \text{como por ejemplo el 1}
+\begin{array}{ll}
+w´(x) = 0 \implies w(x) = cte && \text{como por ejemplo: $w(x) = 1$}
+\end{array}
 $$
 
 Para que la base de autofunciones sea lo más fácil de manejar posible, la normalizamos para que sea ortonormal.
@@ -313,4 +315,21 @@ $$
 $$
 φ_{n} = \frac{1}{\sqrt{2}} \sum_{n=1}^{\infty}sen(\frac{nπx}{4})
 $$
+
+Ahora, resolvemos la EDO que nos quedó por resolver:
+
+$$
+T´´= 9\lambda T
+$$
+
+También es de coeficientes constantes:
+
+$$
+m^2 = 9\lambda \implies m = \pm 3\sqrt{\lambda} \implies m = \pm 3
+$$
+$$
+
+
+
+
 
