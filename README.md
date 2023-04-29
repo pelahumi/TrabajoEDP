@@ -303,7 +303,7 @@ $$
 $$
 
 $$
-= \frac{x}{2} - \frac{sen(\frac{nπx}{2})}{4nπ}]_0^4 = 2 \implies ||X_{n}|| = \sqrt{2}
+= \frac{x}{2} - \frac{sen(\frac{nπx}{2})}{4nπ}]_0^4 = 2 \implies ||X_{n}|| = \sqrt{2}\\
 $$
 
 
