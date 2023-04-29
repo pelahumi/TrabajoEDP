@@ -6,6 +6,9 @@
 3) [Clasificación de EDPs](#3)
 4) [Casos particulares](#4)
 5) [Ejercicios resueltos](#5)
+    5.1) [Ecuación de ondas](#6)
+    5.2) [Ecuación del calor](#7)
+    5.3) [Ecuación de Laplace](#8)
 
 ---
 
@@ -89,7 +92,7 @@ Para la resolución de los tres ejercicios utilizaremos el Método de Separació
 
 Veremos que todos los ejercicioes se resuelven de una manera muy similar, sin embargo los resultados obtenidos nos proporcionarán información muy diferente.
 
-### Ejemplo EDP de onda
+### Ejemplo EDP de onda<a name="6"></a>
 Resolver la siguiente EDP:
 
 $$
