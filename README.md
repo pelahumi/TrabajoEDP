@@ -107,7 +107,7 @@ $$
 \left\lbrace
 \begin{array}{ll}
 u(0,t) = u(4,t) = 0 && \text{t&ge;0}\\
-u(x,0) = 2sen(πx)
+\frac{\partial u}{\partial t}(x,0) = 0  && \text{0&le;x&le;4}
 \end{array}
 \right.
 $$
@@ -116,7 +116,7 @@ Y la siguiente condición inicial:
 
 $$
 \begin{align}
-\frac{\partial u}{\partial t}(x,0) = 0  && \text{0&le;x&le;4}
+u(x,0) = 2sen(πx)
 \end{align}
 $$
 
@@ -171,7 +171,8 @@ Aplicamos las condiciones de contorno obtenemos:
 $$
 \begin{aligned}
 u(0,t) = X(0)T(t) = 0 \implies X(0) = 0\\
-u(4,t) = X(4)T(t) = 0 \implies X(4) = 0
+u(4,t) = X(4)T(t) = 0 \implies X(4) = 0\\
+\frac{\partial u}{\partial t}(x,0) = X(x)T´(0) = 0 \implies T´(0) = 0
 \end{aligned}
 $$
 
@@ -322,12 +323,59 @@ $$
 T´´= 9\lambda T
 $$
 
-También es de coeficientes constantes:
+Como sabemos el valor de $\lambda$ lo sustituimos:
 
 $$
-m^2 = 9\lambda \implies m = \pm 3\sqrt{\lambda} \implies m = \pm 3
+T´´= -\frac{9n^2π^2}{16}T
 $$
+
+La solución a esta EDO la podemos expresar como suma de senos y cosenos:
+
 $$
+T_{n}(t) = C_{1}sen(\frac{3nπt}{4}) + C_{2}cos(\frac{3nπt}{4})
+$$
+
+Aplicamos la ccondición de contorno:
+
+$$
+\frac{\partial u}{\partial t}(x,t) = \frac{3nπ}{4}[C_{1}cos(\frac{3nπx}{4}) -C_{2}sen(\frac{3nπx}{4})] \implies
+$$
+
+$$
+\implies \frac{\partial u}{\partial t}(x,0) = C_{1}\frac{3nπ}{4}cos(0) = 0 \implies C_{1} = 0
+$$
+
+Entonces:
+
+$$
+T_{n}(t) = cos(\frac{3nπt}{4})
+$$
+
+Para tener una solución más general:
+
+$$
+T(t) = \sum_{n=1}^{\infty}cos(\frac{3nπt}{4})
+$$
+
+Por lo tanto la solución del problema quedaría así:
+
+$$
+u(x,t) = \frac{1}{\sqrt{2}}\sum_{n=1}^{\infty}C_{n}sen(\frac{nπx}{4})cos(\frac{3nπt}{4})
+$$
+
+Nos queda calcular los coeficientes $C_{n}$. Para ello usaremos las condiciones inciales:
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
