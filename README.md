@@ -366,8 +366,26 @@ $$
 Nos queda calcular los coeficientes $C_{n}$. Para ello usaremos las condiciones inciales:
 
 $$
-u(x,0) = 
+u(x,0) = \frac{1}{\sqrt{2}}\sum_{n=1}^{\infty}C_{n}sen(\frac{nπx}{4}) = 2sen(πx)
 $$
+
+$$
+u(x,0) = \sum_{n=1}^{\infty}C_{n}\frac{1}{2\sqrt{2}}sen(\frac{nπx}{4}) = sen(πx)
+$$
+
+Es decir, lo podemos reescribir como:
+
+$$
+u(x,0) = \sum_{n=1}^{\infty}\frac{1}{2}C_{n}φ_{n}(x) = sen(πx)
+$$
+
+Si tomamos a $sen(πx)$ como un vector, los coeficientes $\frac{C_{n}}{2}$ son las coordenadas de dicho vector en la base ortonormal que forman las $φ_{n}(x)$. Entoces: 
+
+$$
+\frac{C_{n}}{2} = ⟨φ_{n}(x), sen(πx)⟩ = ∫_{0}^{4}sen(\frac{nπx}{4})sen(πx)dx
+$$
+
+
 
 
 
