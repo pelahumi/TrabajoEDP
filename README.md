@@ -365,6 +365,9 @@ $$
 
 Nos queda calcular los coeficientes $C_{n}$. Para ello usaremos las condiciones inciales:
 
+$$
+u(x,0) = 
+$$
 
 
 
