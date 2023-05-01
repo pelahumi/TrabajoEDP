@@ -382,10 +382,26 @@ $$
 Si tomamos a $sen(πx)$ como un vector, los coeficientes $\frac{C_{n}}{2}$ son las coordenadas de dicho vector en la base ortonormal que forman las $φ_{n}(x)$. Entoces: 
 
 $$
-\frac{C_{n}}{2} = ⟨φ_{n}(x), sen(πx)⟩ = ∫_{0}^{4}sen(\frac{nπx}{4})sen(πx)dx
+\frac{C_{n}}{2} = ⟨φ_{n}(x), sen(πx)⟩ = \frac{1}{\sqrt{2}}∫_{0}^{4}sen(\frac{nπx}{4})sen(πx)dx
 $$
 
+En este caso es suficiente comparar términos para obtener los coeficientes, ya que todos se anulan, menos en $n = 4$:
 
+$$
+C_{4} = 2
+$$
+
+Es decir, que la solución a nuestro problema es:
+
+$$
+u(x,t) = \sum_{n=1}^{\infty}2sen(\frac{nπx}{4})cos(\frac{3nπt}{4})
+$$
+
+Como se cancelan todos los términos menos el $n = 4$:
+
+$$
+u(x,t) = 2sen(\frac{nπx}{4})cos(\frac{3nπt}{4})
+$$
 
 
 
