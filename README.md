@@ -394,16 +394,12 @@ $$
 Es decir, que la solución a nuestro problema es:
 
 $$
-u(x,t) = \sum_{n=1}^{\infty}2sen(\frac{nπx}{4})cos(\frac{3nπt}{4})
-$$
-
-Como se cancelan todos los términos menos el $n = 4$:
-
-$$
 u(x,t) = 2sen(\frac{nπx}{4})cos(\frac{3nπt}{4})
 $$
 
+Gráficamente la función obtenida representa la vibración de una cuerda a lo largo del tiempo, es decir, como va cambiando su forma a lo largo del tiempo aplicando las condiciones iniciales y de contorno del problema. Se vería así:
 
+![giphy](https://user-images.githubusercontent.com/91721764/236179258-cb7e51d4-3536-4dac-94c2-5b5ae24de233.gif)
 
 
 
