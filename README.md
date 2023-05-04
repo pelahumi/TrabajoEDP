@@ -61,7 +61,7 @@ Las ecuaciones de onda más sencillas tienen la siguiente forma:
 
 $$
 \begin{aligned}
-\frac{\partial ^2}{\partial t^2} = a^2\frac{\partial ^2}{\partial x^2}
+\frac{\partial ^2 u}{\partial t^2} = a^2\frac{\partial ^2 u}{\partial x^2}
 \end{aligned}
 $$
 
