@@ -401,7 +401,7 @@ Gráficamente la función obtenida representa la vibración de una cuerda a lo l
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/91721764/236179258-cb7e51d4-3536-4dac-94c2-5b5ae24de233.gif" alt="Solución gráfica" width="300" height="300">
-<\p>
+
 
 
 
