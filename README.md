@@ -309,9 +309,12 @@ $$
 $$
 
 $$
-= \frac{x}{2} - \frac{sen(\frac{nπx}{2})}{4nπ}]_0^4 = 2 \implies ||X_{n}|| = \sqrt{2}\\
+= \frac{x}{2} - \frac{sen(\frac{nπx}{2})}{4nπ}]_0^4 = 2 
 $$
 
+$$
+\implies ||X_{n}|| = \sqrt{2}
+$$
 
 $$
 φ_{n} = \frac{1}{\sqrt{2}} \sum_{n=1}^{\infty}sen(\frac{nπx}{4})
