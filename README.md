@@ -406,14 +406,190 @@ Gráficamente la función obtenida representa la vibración de una cuerda a lo l
     <img src="https://user-images.githubusercontent.com/91721764/236179258-cb7e51d4-3536-4dac-94c2-5b5ae24de233.gif" alt="Solución gráfica" width="300" height="300">
 
 
+### Ejemplo EDP del calor<a name="7"></a>
+Resolver la siguiente EDP:
 
+$$
+\frac{\partial u}{\partial t} = 4\frac{\partial^2 u}{\partial x^2}
+$$
 
+Con las condiciones de frontera siguientes:
 
+$$
+u(0,t) = u(2,t) = 0
+$$
 
+Y la siguiente condición inicial: 
 
+$$
+u(x,0) = x^2(2-x)
+$$
 
+Lo primero analizamos las variables: vemos que la variable espacial la representa la variable $x$ y la temporal la $t$. Lo verificaremos más adelante.
 
+Aplicamos el método de separación de variables: buscamos una solución de la forma:
 
+$$
+u(x,t) = X(x)T(t)
+$$
+
+Calculamos las derivadas que necesitamos:
+
+$$
+\frac{\partial u}{\partial t} = XT´
+\frac{\partial u}{\partial x} = X´T \implies \frac{\partial^2 u}{\partial x^2} = X´´T
+$$
+
+Y sustituimos en la EDP inicial:
+
+$$
+XT´= 4X´´T \implies \frac{T´}{4T} = \frac{X´´}{X} = \lambda
+$$
+
+Efectivamente vemos que este es un problema de separación de variables, y será la variable $x$ a la que le aplicaremos el Problema de Sturm-Liouville. Obteniendo dos EDOs:
+
+$$
+\left\lbrace
+\begin{aligned}
+X´´ = \lambda X\\
+T´ = 4\lambda T
+\end{aligned}
+\right.
+$$
+
+Aplicamos las condiciones de contorno:
+
+$$
+\left\lbrace
+\begin{aligned}
+u(0,t) = X(0)T(t) = 0 \implies X(0) = 0\\
+u(2,t) = X(2)T(t) = 0 \implies X(2) = 0
+\end{aligned}
+\right.
+$$
+
+Problema de Sturm-Liouville:
+
+Buscamos soluciones a la EDO de coeficientes constantes, es decir:
+
+$$
+m^2 = \lambda \implies m = \pm \sqrt{\lambda}
+$$
+
+Dependiendo del valor de $\lambda$ podemos obtener 3 casos:
+
+1) __Caso 1:__ $\lambda > 0$:
+La solución sería una suma de funciones exponenciales:
+
+$$
+X(x) = C_{1}e^x\sqrt{\lambda} + C_{2}e^-x\sqrt{\lambda}
+$$
+
+Aplicamos las condiciones iniciales:
+
+$$
+\left\lbrace
+\begin{aligned}
+X(0) = C_{1} + C_{2} = 0\\
+X(2) = C_{1}e^2\sqrt{\lambda} + C_{2}e^-2\sqrt{\lambda} = 0
+\end{aligned}
+\right.
+$$
+
+Para calcular los coeficientes $C_{1}$ y $C_{2}$ resolvemos el siguiente determinante:
+
+$$
+\begin{vmatrix}
+1 & 1 \\
+e^{2\sqrt{\lambda}} & e^{-2\sqrt{\lambda}}
+\end{vmatrix} = e^{-2\sqrt{\lambda}} - e^{2\sqrt{\lambda}} = 0
+$$
+
+Operando:
+
+$$
+\frac{^{2\sqrt{\lambda}} - e^{-2\sqrt{\lambda}}}{2} = 0 \implies senh(2\sqrt{\lambda}) = 0 \implies \lambda = 0
+$$
+
+LLegando a una contradicción, es decir, que la única solución que hay para $\lambda > 0$ es la trivial.
+
+$$
+C_{1} = C_{2} = 0
+$$
+
+2) __Caso 2:__ $\lambda = 0$:
+La solución es:
+
+$$
+X(x) = C_{1}x + C_{2}
+$$
+
+Aplicamos las condiciones iniciales:
+
+$$
+\left\lbrace
+\begin{aligned}
+X(0) = C_{2} = 0\\
+X(2)V = 2C_{1} = 0
+\end{aligned}
+\right. \implies C_{1} = C_{2} = 0
+$$
+
+3) __Caso 3:__ $\lambda < 0$:
+La solución es una suma de exponenciales que podemos expresar también como suma de senos y cosenos:
+
+$$
+X(x) = C_{1}sen(\sqrt{|\lambda|}x) + C_{2}cos(\sqrt{|\lambda|}x)
+$$
+
+Aplicamos las condiciones iniciales: 
+
+$$
+\left\lbrace
+\begin{aligned}
+X(0) = C_{2} = 0\\
+X(2) = C_{1}sen(2\sqrt{|\lambda|}) = 0
+\end{aligned}
+\right. 
+$$
+
+$$
+\begin{array}{ll}
+\implies sen(2\sqrt{|\lambda|}) = 0 \implies 2\sqrt{|\lambda|} = nπ && \text{$n \in \mathbb{Z}$}
+\end{array}
+$$
+
+$$
+\begin{array}{ll}
+\implies \lambda = -\frac{n^2π^2}{4} && \text{$n=1,2,3,...$}
+\end{array}
+$$
+
+Por lo tanto obtenemos que:
+
+$$
+X_{n} = sen(\frac{nπx}{2})
+$$
+
+Donde cada autofunción $X_{n}$ forman una base ortogonal de un espacio vectorial de dimensión infinita donde el producto vectorial es: 
+
+$$
+\begin{aligned}
+⟨f, g⟩ = ∫_a^b f(x)g(x)w(x)dx
+\end{aligned}
+$$
+
+Donde $w(x)$ es el peso y se calcula:
+
+$$
+w(x) = \frac{a_{2}}{a_{1}} w´(x)
+$$
+
+Donde $w(x)$ es:
+
+$$
+w´(x) = 0 \implies w(x) = cte = 1
+$$
 
 
 
