@@ -591,6 +591,78 @@ $$
 w´(x) = 0 \implies w(x) = cte = 1
 $$
 
+Normalizamos la base de autofunciones dividiendo por su norma:
+
+$$
+||X_{n}(x)||^2 = ⟨X_{n}, X_{n}⟩ = ∫_0^2 sen^2(\frac{nπx}{2})dx = ∫_0^2 \frac{1-cos(nπx)}{2}dx = \frac{x}{2} + \frac{sen(nπx)}{2nπ}]_0^2
+$$
+
+$$
+||X_{n}(x)||^2 = ⟨X_{n}, X_{n}⟩ = 1 \implies ||X_{n}(x)|| = 1
+$$
+
+Nuestra base ortonormal de autofunciones es:
+
+$$
+φ_{n} = sen(\frac{nπx}{2})
+$$
+
+Resolvemos la otra EDO de coeficientes constantes:
+
+$$
+T´ = 4\lambda T
+$$
+
+$$
+m = 4\lambda \implies m = -n^2π^2
+$$
+
+Luego la solución a esta EDO es:
+
+$$
+T(t) = C_{1}e^{-n^2π^2t}
+$$
+
+Entonces la solución a nuestra EDP es:
+
+$$
+u_{n}(x,t) = C_{n}sen(\frac{nπx}{2})e^{-n^2π^2t}
+$$
+
+Para tener una solución más general:
+
+$$
+u(x,t) = \sum_{n=1}^{\infty}C_{n}sen(\frac{nπx}{2})e^{-n^2π^2t}
+$$
+
+Solo nos queda calcular los coeficientes $C_{n}$ y que la función resultante cumpla nuestra condición inicial:
+
+$$
+\begin{aligned}
+u(x,0) = \sum_{n=1}^{\infty}C_{n}sen(\frac{nπx}{2}) = x^2(2-x)\\
+u(x,0) = \sum_{n=1}^{\infty}C_{n}φ_{n} = \vec{v}
+\end{aligned}
+$$
+
+Analizando esta igualdad vemos que los coeficientes $C_{n}$ son las coordenadas del vector $\vec{v}$ en la base $φ_{n}$, es decir:
+
+$$
+C_{n} = ⟨φ_{n}, x^2(2-x)⟩ = ∫_0^2 sen(\frac{nπx}{2})x^2(2-x)dx
+$$
+
+Aplicando tres veces integración por partes obtenemos que:
+
+$$
+C_{n} = \frac{-32}{n^3π^3}[2(-1)^n + 1]
+$$
+
+Finalmente tenemos que la solución a nuestro problema es la siguiente:
+
+$$
+u(x,t) = \sum_{n=1}^{\infty}\frac{-32}{n^3π^3}[2(-1)^n + 1]sen(\frac{nπx}{2})e^{-n^2π^2t}
+$$
+
+
 
 
 
