@@ -664,7 +664,8 @@ $$
 
 Gráficamente la solución se representa de la siguiente manera:
 
-<img width="694" alt="Captura de pantalla 2023-05-06 a las 23 43 14" src="https://user-images.githubusercontent.com/91721764/236861272-6c031f50-8088-45a8-9637-c4a6525953a2.png">
+<p align="center">
+<img width="694" alt="Captura de pantalla 2023-05-06 a las 23 43 14" src="https://user-images.githubusercontent.com/91721764/236861272-6c031f50-8088-45a8-9637-c4a6525953a2.png" alt="Solución gráfica" width="300" height="300">
 
 
 
