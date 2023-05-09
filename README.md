@@ -775,7 +775,7 @@ Aplicando las condiciones de contorno:
 $$
 \left\lbrace
 \begin{aligned}														 
-Y(0) = C_{1}cosh(\sqrt{|\lambda|}x) = 0 \implies C_{1} = 0\\
+Y(0) = C_{1}cosh(0) = 0 \implies C_{1} = 0\\
 Y(π) = C_{2}senh(\sqrt{|\lambda|}π) = 0  \lambda = 0
 \end{aligned}
 \right. \implies C_{1} = C_{2} = 0
