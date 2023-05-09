@@ -677,7 +677,109 @@ $$
 \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0
 $$
 
+Con las siguientes condiciones:
 
+$$
+\left\lbrace
+\begin{aligned}
+u(x,0) = u(x,π) = 0\\
+u(0,y) = u(π,y) = y
+\end{aligned}
+\right.
+$$
 
+Lo primero es comprobar si es un problema de separación de variables, para ello buscamos soluciones de la forma:
 
+$$
+u(x,y) = X(x)Y(y)
+$$
+
+Calculamos las derivadas, sustituimos en la ecuación original y vemos si las dos variables $x$ e $y$ se pueden separar una a cada lado de la ecuación.
+	
+$$
+\left\lbrace
+\begin{aligned}
+\frac{\partial u}{\partial x} = X´Y \implies \frac{\partial^2 u}{\partial x^2} = X´´Y\\
+\frac{\partial u}{\partial y} = XY´ \implies \frac{\partial^2 u}{\partial y^2} = XY´´\\
+\end{aligned}
+\right.
+$$
+
+Sustituyendo:
+	
+$$
+X´´Y + XY´´= 0 \implies X´´Y = -XY´´ \implies \frac{X´´}{X} = -\frac{Y´´}{Y} = \lambda
+$$
+
+Sí es un problema de separación de variables, y tenemos el siguiente sistema de EDOs:
+	
+$$
+\left\lbrace
+\begin{aligned}
+X´´= \lambda X\\
+Y´´= -\lambda Y
+\end{aligned}
+\right.
+$$
+
+Aplicando las condiciones:
+	
+$$
+\left\lbrace
+\begin{aligned}
+u(x,0) = X(x)Y(0) = 0 \implies Y(0) = 0\\
+u(x,π) = X(x)Y(π) = 0 \implies Y(π) = 0
+\end{aligned}
+\right.
+$$
+	
+Esto nos determina que el problema de Sturm-Liouville hay que aplicarlo a la variable $y$:	
+
+Problema de Sturm-Liouville:
+
+Tenemos una EDO de coeficientes constantes, por lo que buscamos soluciones exponenciales:
+
+$$
+m^2 = -\lambda \implies m = \pm\sqrt{-\lambda}
+$$	
+
+1) __Caso 1:__ $\lambda = 0$:
+
+La solución es trivial:
+
+$$	
+Y(y) = C_{1}y + C_{2}
+$$
+
+Aplicamos las condiciones de frontera:
+	
+$$
+\left\lbrace
+\begin{aligned}
+Y(0) = C_{2} = 0\\
+Y(π) = πC_{1} = 0
+\end{aligned}
+\right. \implies C_{1} = C_{2} = 0
+$$
+
+2) __Caso 2:__ $\lambda < 0$:
+
+La solución es una suma de fuciones hiperbólicas:
+														
+$$														 
+Y(y) = C_{1}cosh(\sqrt{|\lambda|}x)	+ C_{2}senh(\sqrt{|\lambda|}x)													
+$$
+														 
+Aplicando las condiciones de contorno:
+	
+$$
+\left\lbrace
+\begin{aligned}														 
+Y(0) = C_{1}cosh(\sqrt{|\lambda|}x) = 0\\ \implies C_{1} = 0
+Y(π) = C_{2}senh(\sqrt{|\lambda|}π) = 0  \lambda = 0
+\end{aligned}
+\right. \implies C_{1} = C_{2} = 0
+$$
+	
+	
 
