@@ -940,6 +940,10 @@ $$
 u(x,y) = \sum_{n=0}^{\infty}\sqrt{\frac{π}{2}}sen(ny)[\frac{π(-1)^{n+1}[1-cosh(nπ)]}{nsenh(nπ)}senh(nx) + \frac{π(-1)^{n+1}}{n}cosh(nx)]
 $$
 
+Esta sería la solución gráfica:
+
+<p align="center">
+<img width="654" alt="Captura de pantalla 2023-05-13 a las 19 31 39" src="https://github.com/pelahumi/TrabajoEDP/assets/91721764/02356d16-ac53-4f9f-b5d4-37b4cda3a318">
 
 
 
