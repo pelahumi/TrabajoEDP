@@ -810,13 +810,13 @@ $$
 
 $$
 \begin{array}{ll}
-\sqrt{\lambda}π = nπ && \text{$n \in \mathbb{Z}}
+\sqrt{\lambda}π = nπ && \text{$n \in \mathbb{Z}$}
 \end{array}
 $$
   
 $$
 \begin{array}{ll}
-\implies \lambda = n^2 && \text{$n=1,2,3...}
+\implies \lambda = n^2 && \text{$n=1,2,3...$}
 \end{array}
 $$
 
