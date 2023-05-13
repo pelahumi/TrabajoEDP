@@ -604,7 +604,7 @@ $$
 Nuestra base ortonormal de autofunciones es:
 
 $$
-φ_{n} = sen(\frac{nπx}{2})
+φ_{n}(x) = sen(\frac{nπx}{2})
 $$
 
 Resolvemos la otra EDO de coeficientes constantes:
@@ -743,7 +743,7 @@ $$
 m^2 = -\lambda \implies m = \pm\sqrt{-\lambda}
 $$	
 
-1) __Caso 1:__ $\lambda = 0$:
+1) __Caso 1:__ $-\lambda = 0$:
 
 La solución es trivial:
 
@@ -762,12 +762,12 @@ Y(π) = πC_{1} = 0
 \right. \implies C_{1} = C_{2} = 0
 $$
 
-2) __Caso 2:__ $\lambda < 0$:
+2) __Caso 2:__ $-\lambda > 0$:
 
 La solución es una suma de fuciones hiperbólicas:
 														
 $$														 
-Y(y) = C_{1}cosh(\sqrt{|\lambda|}x)	+ C_{2}senh(\sqrt{|\lambda|}x)													
+Y(y) = C_{1}cosh(\sqrt{|\lambda|}x) + C_{2}senh(\sqrt{|\lambda|}x)													
 $$
 														 
 Aplicando las condiciones de contorno:
@@ -781,5 +781,165 @@ Y(π) = C_{2}senh(\sqrt{|\lambda|}π) = 0  \lambda = 0
 \right. \implies C_{1} = C_{2} = 0
 $$
 	
-	
+3) __Caso 3:__ $-\lambda < 0$:
+
+Nos queda:
+
+$$
+\begin{array}{ll}
+Y´´= -\lambda Y && \text{$\lambda > 0$}
+\end{array}
+$$
+
+Entonces, la solución es una suma de senos y cosenos:
+  
+$$
+Y(y) = C_{1}sen(\sqrt{\lambda}x) + C_{2}cos(\sqrt{\lambda}x)  
+$$
+
+Aplicamos las condiciones de contorno:
+  
+$$
+\left\lbrace
+\begin{aligned}			
+Y(0) = C_{2} = 0\\
+Y(π) = C_{1}sen(\sqrt{\lambda}π) = 0
+\end{aligned}
+\right.
+$$
+
+$$
+\begin{array}{ll}
+\sqrt{\lambda}π = nπ && \text{$n \in \mathbb{Z}}
+\end{array}
+$$
+  
+$$
+\begin{array}{ll}
+\implies \lambda = n^2 && \text{$n=1,2,3...}
+\end{array}
+$$
+
+Luego la solución es:
+
+$$
+Y_{n}(y) = sen(ny)
+$$
+
+Obteniendo así n autofunciones que forman una base ortogonal de un espacio vectorial infinito dimensional, cuyo producto escalar viene definido por:
+
+$$
+\begin{aligned}
+⟨f, g⟩ = ∫_a^b f(y)g(y)w(y)dy
+\end{aligned}
+$$
+
+Donde el peso $w(y)$ es:
+
+$$
+w´(y) = 0 \implies w(y) = cte \implies w(y) = 1
+$$
+
+Normalizamos la base:
+
+$$
+||Y_{n}||^2 = ⟨Y_{n}, Y_{n}⟩ = ∫_0^π sen^2(ny)dy = ∫_0^π \frac{1 - cos(2ny)}{2}dy = \frac{y}{2} - \frac{sen(2ny)}{4n}]_0^π
+$$
+
+$$
+\implies ||Y_{n}||^2 = \frac{π}{2} \implies ||Y_{n}|| = \sqrt{\frac{π}{2}}
+$$
+
+Luego:
+$$
+φ_{n}(y) = \sqrt{\frac{π}{2}}sen(ny)
+
+Resolvemos la otra EDO:
+
+$$
+X´´= \lambda X \implies X´´= n^2X
+$$
+
+Entonces:
+
+$$
+X(x) = C_{1}senh(nx) + C_{2}cosh(nx)
+$$
+
+De momento lo dejaremos así.
+
+Agrupando el producto de ambas soluciónes obtenemos la solución $u(x,y)$:
+
+$$
+u_{n}(x,y) = \sqrt{\frac{π}{2}}sen(ny)[A_{n}senh(nx) + B_{n}cosh(nx)]
+$$
+
+Entonces:
+
+$$
+u(x,y) = \sum_{n=0}^{\infty}\sqrt{\frac{π}{2}}sen(ny)[A_{n}senh(nx) + B_{n}cosh(nx)]
+$$
+
+Aplicando las condiciones iniciales:
+
+$$
+u(0,y) = \sum_{n=0}^{\infty}B_{n}\sqrt{\frac{π}{2}}sen(ny) = y
+$$
+
+Que no es más que el producto escalar de $y$ con $φ_{n}(y)$ donde $B_{n}$ son las coordenadas de $y$ en la base formada por $φ_{n}(y)$:
+
+$$
+B_{n} = ∫_0^π \sqrt{\frac{π}{2}}sen(ny)ydy 
+$$
+
+Resolviendo por partes obtenemos que:
+
+$$
+B_{n} = -\frac{π}{n}cos(nπ) = \frac{π(-1)^{n+1}}{n}
+$$
+
+Aplicamos la otra condición inicial:
+
+$$
+u(π,y) = \sum_{n=0}^{\infty}\sqrt{\frac{π}{2}}sen(ny)[A_{n}senh(nπ) + B_{n}cosh(nπ)] = y
+$$
+
+Tomando:
+
+$$
+C_{n} = [A_{n}senh(nπ) + B_{n}cosh(nπ)]
+$$
+
+Tenemos otra vez:
+
+$$
+u(π,y) = \sum_{n=0}^{\infty}C_{n}\sqrt{\frac{π}{2}}sen(ny) = y
+$$
+
+Que es el mismo producto escalar de antes, pero con $C_{n}$ de coordenadas:
+
+$$
+C_{n} = \frac{π(-1)^{n+1}}{n}
+$$
+
+Entonces:
+
+$$
+\frac{π(-1)^{n+1}}{n} = [A_{n}senh(nπ) + \frac{π(-1)^{n+1}}{n}cosh(nπ)]
+$$
+
+Despejando obtenemos que:
+
+$$
+A_{n} = \frac{π(-1)^{n+1}[1-cosh(nπ)]}{nsenh(nπ)}
+$$
+
+Por último solo falata sustituir $A_{n}$ y $B_{n}$:
+
+$$
+u(x,y) = \sum_{n=0}^{\infty}\sqrt{\frac{π}{2}}sen(ny)[\frac{π(-1)^{n+1}[1-cosh(nπ)]}{nsenh(nπ)}senh(nx) + \frac{π(-1)^{n+1}}{n}cosh(nx)]
+$$
+
+
+
 
