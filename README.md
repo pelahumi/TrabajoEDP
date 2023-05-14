@@ -398,7 +398,7 @@ $$
 u(x,t) = 2sen(\frac{nπx}{4})cos(\frac{3nπt}{4})
 $$
 
-Gráficamente la función obtenida representa la vibración de una cuerda a lo largo del tiempo, es decir, como va cambiando su forma a lo largo del tiempo aplicando las condiciones iniciales y de contorno del problema. Se vería así:
+Gráficamente la función obtenida representa la vibración de una cuerda a lo largo del tiempo, es decir, como va cambiando su forma a lo largo del tiempo aplicando las condiciones iniciales y de contorno del problema. Tenemos una cuerda de longitud 4 unidades, que estiramos de una manera y vemos como varía su forma con el paso del tiempo. Como podemos observar la cuerda en ningún momento se para, si no que se queda vibrando para siempre, por lo que no pierde energía:
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/91721764/236179258-cb7e51d4-3536-4dac-94c2-5b5ae24de233.gif" alt="Solución gráfica" width="300" height="300">
@@ -660,11 +660,16 @@ $$
 u(x,t) = \sum_{n=1}^{\infty}\frac{-32}{n^3π^3}[2(-1)^n + 1]sen(\frac{nπx}{2})e^{-n^2π^2t}
 $$
                              
-
-Gráficamente la solución se representa de la siguiente manera:
+Tenemos una varilla metálica, conductora de calor, de longitud 2 unidades. A la que en el tiempo inical está a una temperatura, y con el paso del tiempo vemos como la varilla va perdiendo todo ese calor, toda esa energía que tenía, por sus extremos:
 
 <p align="center">
 <img width="694" alt="Captura de pantalla 2023-05-06 a las 23 43 14" src="https://user-images.githubusercontent.com/91721764/236861272-6c031f50-8088-45a8-9637-c4a6525953a2.png" alt="Solución gráfica">
+
+En movimiento:
+
+<p align="center">
+<img width="400" alt="Captura de pantalla 2023-05-06 a las 23 43 14" src="https://user-images.githubusercontent.com/91721764/236861272-6c031f50-8088-45a8-9637-c4a6525953a2.png" alt="Solución gráfica">
+
 
  
 ### Ejemplo EDP de Laplace<a name="8"></a>
