@@ -18,13 +18,11 @@ En este trabajo de profundización se abarcarán los siguientes temas: la clasif
 ---
 
 ## 2. Contexto histórico<a name="2"></a>
-Una de los primeros descubrimientos y aportaciones más importantes sobre las ecuaciones de ondas se remonta al siglo XVIII (año 1750 aprox.), cuando el matemático francés  Jean le Rond d'Alembert empezó a trabajar sobre la teoría de vibraciones y de ondas sobre una cuerda tensa. D´Alambret desarrolló una ecuación de ondas para replicar la propagación de las ondas en una cuerda infinita y uniforme.
+Los orígenes de las EDP se remontan a los siglos XVII y XVIII, cuando los matemáticos empezaron a trabajar en el cálculo de variaciones y en la formulación de leyes físicas en términos matemáticos.
 
-En el siglo XIX el matemático Augustin Louis Cauchy continuó al desarrollo de las ecuaciones de ondas haciendo grandes aportaciones. Formuló el llamado problema de Cauchy, que consiste en dar una solución que satisfaga la ecuación de ondas, dadas unas condiciones de frontera y condiciones iniciales. Este problema es importante porque ofrece la obtención de unas soluciones más exactas, y lo más importante, en situaciones más generales que las de D´Alambert.
+Uno de los primeros avances significativos en la teoría de las EDP fue realizado por el matemático francés Jean le Rond d'Alembert, quien en 1747 publicó un artículo que establecía la ecuación de onda para describir la propagación de ondas en una cuerda tensa. Más tarde, en la segunda mitad del siglo XIX, el matemático francés Joseph Fourier introdujo la transformada de Fourier, una técnica poderosa para resolver ecuaciones diferenciales parciales.
 
-Las EDP de ondas se convirtieron en una herramienta fundamental en la física. Los físicos implementaron dichas ecuaciones para modelar la propagación de ondas electromagnéticas, acústicas y gravitartorias. También se implementaron en el ámbito de la ingeniería para diseñar y optimizar sistemas como antenas, sensores acústicos o dispositivos de comunicación.
-
-En la actualidad se sigue investigando las ecuaciones de ondas en matemáticas y física, y se han desarrollado técnicas más sofisticadas para el cálculo de soluciones, así como comprender mejor su naturaleza. Además, pese a que a muchos les parezca imposible, se han encontrado aplicaciones de las ecuaciones de ondas en otros campos como la medicina (como por ejemplo en la ecografía), la geofísica y la oceanografía, entre otros.
+En el siglo XX, las EDP se convirtieron en un área activa de investigación en matemáticas aplicadas y se utilizaron ampliamente en la física y la ingeniería. Las ecuaciones diferenciales parciales han sido fundamentales para entender fenómenos como la propagación de ondas sísmicas, el flujo de fluidos, la difusión de calor y la dinámica de los campos electromagnéticos. La investigación en EDP continúa siendo un área de gran interés en la actualidad, y las nuevas técnicas y herramientas matemáticas han permitido la formulación y resolución de ecuaciones cada vez más complejas.
 
 ---
 
