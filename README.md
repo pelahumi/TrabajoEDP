@@ -943,5 +943,10 @@ La ecuación de Laplace describe la distribución estacionaria de temperatura, p
 <p align="center">
 <img width="654" alt="Captura de pantalla 2023-05-13 a las 19 31 39" src="https://github.com/pelahumi/TrabajoEDP/assets/91721764/02356d16-ac53-4f9f-b5d4-37b4cda3a318">
 
-Podemos observar que las condiciones de contorno forman un cuadrado donde se produce la variación de la solución.
+Podemos observar que las condiciones de contorno forman un cuadrado donde se produce la variación de la solución. Visto en movimiento:
+
+<p align="center">
+![Solucion grafica](https://github.com/pelahumi/TrabajoEDP/assets/91721764/605775d1-203c-44c1-bd9a-b181a22a8e52)
+
+
 
