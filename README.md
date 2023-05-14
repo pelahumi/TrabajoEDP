@@ -938,10 +938,10 @@ $$
 u(x,y) = \sum_{n=0}^{\infty}\sqrt{\frac{π}{2}}sen(ny)[\frac{π(-1)^{n+1}[1-cosh(nπ)]}{nsenh(nπ)}senh(nx) + \frac{π(-1)^{n+1}}{n}cosh(nx)]
 $$
 
-Esta sería la solución gráfica:
+La ecuación de Laplace describe la distribución estacionaria de temperatura, presión, voltaje u otro fenómeno físico en un medio sin fuentes ni sumideros. Una forma común de visualizar la solución de la ecuación de Laplace es a través de un gráfico tridimensional de la función solución. Veamos como se vería dicho gráfico:
 
 <p align="center">
 <img width="654" alt="Captura de pantalla 2023-05-13 a las 19 31 39" src="https://github.com/pelahumi/TrabajoEDP/assets/91721764/02356d16-ac53-4f9f-b5d4-37b4cda3a318">
 
-
+Podemos observar que las condiciones de contorno forman un cuadrado donde se produce la variación de la solución.
 
