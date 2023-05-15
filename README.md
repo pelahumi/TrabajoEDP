@@ -1,4 +1,7 @@
-# TrabajoEDP
+# Trabajo de Profundización EDP
+
+Autor: Pelayo Huerta Mijares
+
 
 ## Índice
 1) [Introducción](#1)
@@ -10,11 +13,16 @@
     - [Ecuación del calor](#7)
     - [Ecuación de Laplace](#8)
 6) [Series de Fourier](#9)
+    - [Ejemplo resuelto 1](#10)
+    - [Ejemplo resuelto 2](#11)
 
 ---
 
 ## 1. Introducción<a name="1"></a>
-En este trabajo de profundización se abarcarán los siguientes temas: la clasificación de ecuaciones en derivadas parciales, así como un ejemplo resuelto de cada una de ellas, con la evaluación correspondiente para cada solución con su gráfica. 
+El objeto de este trabajo es profundizar en el estudio de la Teoría de las Ecuaciones en Derivadas Parciales (EDP). La teoría de EDP es una generalización y extensión de la teoría clásica de ecuaciones diferenciales (EDO), aunque mucho más sofisticada. Las EDP se emplean habitualmente en la modelización de fenómenos de la ciencia y de la tecnología en los que se describe la dinámica a lo largo del tiempo de determinada cantidad o variables (también denominada estado), que puede representar objetos y fenómenos de los más diversos. A diferencia de la teoría de las EDO, en las que el estado o variable de un modelo es finito-dimensional, en los modelos matemáticos naturales en los que se emplean EDP, la variable de estado es infinito-dimensional.
+Este trabajo se centra en estudiar las EDP, su clasificación según la teoría clásica, desarrollando ejemplos de problemas que involucran los operadores de cada grupo, con su solución gráfica. limitando el estudio a las EDP de orden dos. También se introduce a las series de Fourier desarrollando ejemplos con solución gráfica y el estudio de los resultados.
+
+Pd: Los ejercicios han sido resueltos y gráficados por el alumno con la ayuda de la aplicación GeoGebra
 
 ---
 
@@ -85,6 +93,8 @@ $$
 &Delta;u = \frac{\partial u^2}{\partial x^2} + \frac{\partial u^2}{\partial y^2} = 0
 \end{aligned}
 $$
+
+---
 
 ## 5. Ejercicios resueltos<a name="5"></a>
 Para la resolución de los tres ejercicios utilizaremos el Método de Separación de Variables o también conocido como el Método de Fourier.
@@ -985,7 +995,9 @@ $$
 SF(x) = a_{0} + \sum_{n=1}{\infty}(a_{n}cos(\frac{2nπx}{b-a}) + b_{n}sen(\frac{2nπx}{b-a})
 $$
 
-### Ejemplo resuelto
+---
+
+### Ejemplo resuelto 1<a name="10"></a>
 Calcular la serie de Fourier para la función:
 
 $$
@@ -1051,6 +1063,74 @@ Veamos lo que ocurre cuando hacemos la gráfica de la función:
 
 Vemos como a medida que tomamos más términos del sumatorio (a medida que incrementamos $n$) nuestra función $SF(x)$ se va adaptando a la forma de la función $f(x)$. Y además, la va reproduciendo periódicamente en intervalos de la misma longitud que el inicial.
 
+---
+
+### Ejemplo resuelto 2<a name="11"></a>
+Calcular la serie de Fourier para la función:
+
+$$
+f(x) = \left\lbrace
+\begin{array}{ll}
+1-x && \text{si $-1≤x<0$}\\
+0 && \text{si $0≤x≤1$}
+\end{array}
+\right.
+$$
+
+Donde:
+
+$$
+b-a = 1 - (-1) = 2
+$$
+
+En este ejercicio la base de Fourier es la siguiente:
+
+$$
+\beta_{F} = [ \frac{1}{\sqrt{2}}, cos(nπx), sen(nπx) ]
+$$
+
+Calculamos los coeficientes de Fourier:
+
+1) __a_{0}:
+
+$$
+a_{0} = ∫_{-1}^1 \frac{1}{\sqrt{2}}f(x)dx = ∫_{-1}^0 \frac{1}{\sqrt{2}}(1-x)dx + ∫_0^1 0dx = \frac{1}{\sqrt{2}}(x-\frac{x^2}{2})]_{-1}^{0} = \frac{3}{2\sqrt{2}}
+$$
+
+2) __a_{n}:
+
+$$
+a_{n} = ∫_{-1}^1 cos(nπx)f(x)dx = ∫_{-1}^0 cos(nπx)(1-x)dx + ∫_0^1 0dx
+$$
+
+Integrando una vez por partes:
+
+$$
+a_{n} = \frac{(-1)^n - 1}{n^2π^2}
+$$
+
+3) __b_{n}:
+
+$$
+b_{n} =  ∫_{-1}^1 sen(nπx)f(x)dx = ∫_{-1}^0 sen(nπx)(1-x)dx + ∫_0^1 0dx
+$$
+
+Integrando una vez por partes:
+
+$$
+b_{n} = \frac{2(-1)^n}{nπ} - \frac{1}{nπ}
+$$
+
+Luego la serie de Fourier quedaría:
+
+$$
+SF(x) = \frac{3}{4} + \sum_{n=1}^{\infty}(\frac{(-1)^n - 1}{n^2π^2}cos(nπx) + (\frac{2(-1)^n}{nπ} - \frac{1}{nπ})sen(nπx))
+$$
+
+En este ejemplo, se ve de una forma más clara como con formas sinusoidales y cosenoidales podemos representar funciones periódicas, y reproducirlas en intervalos de igual longitud. Cabe destacar que la serie de Fourier es menos precisa en las zonas de discontinuidad de salto finito. Esto se puede apreciar viendo que la curva en los extremos de los segmentos queda más alejada.
+
+<p align="center">
+<img width="300" alt="Captura de pantalla 2023-05-13 a las 19 31 39" src="https://github.com/pelahumi/TrabajoEDP/assets/91721764/9bb0db62-467c-43d1-a733-3fd60097c527">
 
 
 
