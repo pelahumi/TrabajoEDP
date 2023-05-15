@@ -426,7 +426,7 @@ $$
 
 Lo primero analizamos las variables: vemos que la variable espacial la representa la variable $x$ y la temporal la $t$. Lo verificaremos más adelante.
 
-Aplicamos el método de separación de variables: buscamos una solución de la forma:
+Aplicamos el método de separación de variables y buscamos una solución de la forma:
 
 $$
 u(x,t) = X(x)T(t)
@@ -570,7 +570,7 @@ $$
 X_{n} = sen(\frac{nπx}{2})
 $$
 
-Donde cada autofunción $X_{n}$ forman una base ortogonal de un espacio vectorial de dimensión infinita donde el producto vectorial es: 
+Donde las autofunciónes $X_{n}$ forman una base ortogonal de un espacio vectorial de dimensión infinita donde el producto vectorial es: 
 
 $$
 \begin{aligned}
@@ -849,9 +849,11 @@ $$
 $$
 
 Luego:
+	
 $$
 φ_{n}(y) = \sqrt{\frac{π}{2}}sen(ny)
-
+$$
+	
 Resolvemos la otra EDO:
 
 $$
@@ -932,7 +934,7 @@ $$
 A_{n} = \frac{π(-1)^{n+1}[1-cosh(nπ)]}{nsenh(nπ)}
 $$
 
-Por último solo falata sustituir $A_{n}$ y $B_{n}$:
+Por último solo falta sustituir $A_{n}$ y $B_{n}$:
 
 $$
 u(x,y) = \sum_{n=0}^{\infty}\sqrt{\frac{π}{2}}sen(ny)[\frac{π(-1)^{n+1}[1-cosh(nπ)]}{nsenh(nπ)}senh(nx) + \frac{π(-1)^{n+1}}{n}cosh(nx)]
