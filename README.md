@@ -949,6 +949,7 @@ Podemos observar que las condiciones de contorno forman un cuadrado donde se pro
 <p align="center">
 <img width="400" alt="Captura de pantalla 2023-05-13 a las 19 31 39" src="https://github.com/pelahumi/TrabajoEDP/assets/91721764/b9891cd2-7d2c-45c6-9424-01fe974bdfc0">
 
+---
 
 ## Series de Fourier<a name="9"></a>
 Como extra se ha hecho una introducción de las series de Fourier, así como un ejemplo resuelto de las mismas.
