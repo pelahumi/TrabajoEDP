@@ -101,6 +101,8 @@ Para la resolución de los tres ejercicios utilizaremos el Método de Separació
 
 Veremos que todos los ejercicioes se resuelven de una manera muy similar, sin embargo los resultados obtenidos nos proporcionarán información muy diferente.
 
+---
+
 ### Ejemplo EDP de onda<a name="6"></a>
 Resolver la siguiente EDP:
 
@@ -414,6 +416,7 @@ Gráficamente la función obtenida representa la vibración de una cuerda a lo l
 <p align="center">
     <img src="https://user-images.githubusercontent.com/91721764/236179258-cb7e51d4-3536-4dac-94c2-5b5ae24de233.gif" alt="Solución gráfica" width="300" height="300">
 
+---
 
 ### Ejemplo EDP del calor<a name="7"></a>
 Resolver la siguiente EDP:
@@ -676,6 +679,7 @@ Tenemos una varilla metálica, conductora de calor, de longitud 2 unidades. A la
 <p align="center">
 <img width="694" alt="Captura de pantalla 2023-05-06 a las 23 43 14" src="https://user-images.githubusercontent.com/91721764/236861272-6c031f50-8088-45a8-9637-c4a6525953a2.png" alt="Solución gráfica">
 
+---
  
 ### Ejemplo EDP de Laplace<a name="8"></a>
 
