@@ -949,3 +949,117 @@ Podemos observar que las condiciones de contorno forman un cuadrado donde se pro
 <img width="400" alt="Captura de pantalla 2023-05-13 a las 19 31 39" src="https://github.com/pelahumi/TrabajoEDP/assets/91721764/b9891cd2-7d2c-45c6-9424-01fe974bdfc0">
 
 
+## Series de Fourier
+Como extra se ha hecho una introducción de las series de Fourier, así como un ejemplo resuelto de las mismas.
+
+### Definición
+Las series de Fourier son una herramienta utilizada para representar funciones periódicas como sumas de senos y cosenos. Fueron desarrolladas por el matemático Jean-Baptiste Joseph Fourier en el siglo XX:
+
+La idea se basa en que cualquier función periódica se puede expresar en la base de Fourier:
+
+$$
+\beta_{F} = \llave1 \frac{1}{\sqrt{2}}, cos(\frac{2nπx}{b-a}), sen(\frac{2nπx}{b-a})} \llave2
+$$
+
+Donde $a$ y $b$ son los extremos inferior y superior del intervalo respectivamente. Para expresar una función en una base necesitamos las coordenadas de la función en dicha base. Para calcular los coeficientes de Fourier:
+
+$$
+a_{0} = \frac{2}{b-a}∫_a^b \frac{1}{\sqrt{2}}f(x)dx
+$$
+
+$$
+a_{n} = \frac{2}{b-a}∫_a^b cos(\frac{2nπx}{b-a})f(x)dx
+$$
+	
+$$
+b_{n} = \frac{2}{b-a}∫_a^b sen(\frac{2nπx}{b-a})f(x)dx
+$$
+
+Con esto ya tenemos todo lo necesario para expresar cualquier función como una serie de Fourier (suma de senos y cosenos):
+
+$$
+SF(x) = a_{0} + \sum_{n=1}{\infty}(a_{n}cos(\frac{2nπx}{b-a}) + b_{n}sen(\frac{2nπx}{b-a})
+$$
+
+### Ejemplo resuelto
+Calcular la serie de Fourier para la función:
+
+$$
+\begin{array}{ll}
+f(x) = x^2(1-x) && \text{$0≤x≤2}
+\end{array}
+$$
+
+Donde:
+
+$$
+b-a = 2-0 = 2
+$$
+
+En este ejercicio la serie de Fourier es la siguiente:
+
+$$
+\beta_{F} = \llave1 \frac{1}{\sqrt{2}}, cos(nπx), sen(nπx) \llave2
+$$
+
+Calculamos los coeficientes de Fourier:
+
+1) __a_{0}:__
+
+$$
+a_{0} = ∫_0^2 \frac{1}{\sqrt{2}}x^2(1-x)dx = \frac{1}{\sqrt{2}}[\frac{2x^3}{3}-\frac{x^4}{4}]_{0}^{2} = \frac{4}{3\sqrt{2}}
+$$
+
+2) __a_{n}:__
+
+$$
+a_{n} = ∫_0^2 x^2(1-x)cos(nπx)dx
+$$
+
+Integrando por partes tres veces obtenemos:
+
+$$
+a_{n} = \frac{-4}{n^2π^2}
+$$
+
+2) __b_{n}:__
+
+$$
+b_{n} = ∫_0^2 x^2(1-x)sen(nπx)dx
+$$
+
+Integrando otra vez por partes:
+
+$$
+b_{n} = \frac{-12}{n^3π^3}
+$$
+
+Entonces, la serie de Fourier:
+
+$$
+SF(x) = \frac{2}{3} + \sum_{n=1}^{\infty}[\frac{-4}{n^2π^2}cos(nπx) - \frac{12}{n^3π^3}]
+$$
+
+Veamos lo que ocurre cuando hacemos la gráfica de la función:
+
+<p align="center">
+<img width="400" alt="Captura de pantalla 2023-05-13 a las 19 31 39" src="https://github.com/pelahumi/TrabajoEDP/assets/91721764/260f9b07-cf2a-4b8a-bd8a-09c9ccc8ad35">
+
+Vemos como a medida que tomamos más términos del sumatorio (a medida que incrementamos $n$) nuestra función $SF(x)$ se va adaptando a la forma de la función $f(x)$. Y además, la va reproduciendo periódicamente en intervalos de la misma longitud que el inicial.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
