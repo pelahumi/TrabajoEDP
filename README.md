@@ -177,7 +177,7 @@ $$
 
 Este paso nos asegura que la variable $x$ es la variable espacial, y por tanto aplicaremos el problema de Sturm-Liouville a su EDO para encontrar soluciones que satisfagan las condiciones de contorno (que no sean las triviales).
 
-Buscamos una solución de la forma exponencial (EDO de coeficientes constantes) que es problema de Sturm-Liouville:
+Buscamos una solución de la forma exponencial (EDO de coeficientes constantes) y resolvemos el problema de Sturm-Liouville:
 
 $$
 m^2 = \lambda \implies m = \pm \sqrt{\lambda}
@@ -191,7 +191,7 @@ Si $\lambda$ es un número positivo, la solución nos quedaría una exponencial 
         
 $$
 \begin{aligned}
-u(x,t) = C1e^{x\sqrt{\lambda}} + C2e^{-x\sqrt{\lambda}}
+u(x,t) = C_{1}e^{x\sqrt{\lambda}} + C_{2}e^{-x\sqrt{\lambda}}
 \end{aligned}
 $$
 
@@ -200,8 +200,8 @@ Aplicando los resultados que obtuvimos con las condiciones de contorno:
 $$
 \left\lbrace
 \begin{aligned}
-X(0) = C1e^{0\sqrt{\lambda}} + C2e^{-0\sqrt{\lambda}} = C1 + C2 = 0\\
-X(4) = u(x,t) = C1e^{4\sqrt{\lambda}} + C2e^{-4\sqrt{\lambda}} = 0
+X(0) = C_{1}e^{0\sqrt{\lambda}} + C_{2}e^{-0\sqrt{\lambda}} = C_{1} + C_{2} = 0\\
+X(4) = u(x,t) = C_{1}e^{4\sqrt{\lambda}} + C_{2}e^{-4\sqrt{\lambda}} = 0
 \end{aligned}
 \right.
 $$
@@ -228,7 +228,7 @@ LLegamos a una contradicción, ya que teniamos como hipótesis que $\lambda < 0$
 En esta caso la solución sería la siguiente: 
 
 $$
-X(x) = C1x + C2
+X(x) = C_{1}x + C_{2}
 $$
 
 Aplicamos las condiciones de contorno:
@@ -236,10 +236,10 @@ Aplicamos las condiciones de contorno:
 $$
 \left\lbrace
 \begin{aligned}
-X(0) = C2 = 0\\
-X(4) = 4C1 + C2 = 0
+X(0) = C_{2} = 0\\
+X(4) = 4C_{1} + C_{2} = 0
 \end{aligned}
-\right. \implies C1 = C2 = 0
+\right. \implies C_{1} = C_{2} = 0
 $$
 
 Obtenemos la solución trivial.
