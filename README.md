@@ -665,12 +665,6 @@ Tenemos una varilla metálica, conductora de calor, de longitud 2 unidades. A la
 <p align="center">
 <img width="694" alt="Captura de pantalla 2023-05-06 a las 23 43 14" src="https://user-images.githubusercontent.com/91721764/236861272-6c031f50-8088-45a8-9637-c4a6525953a2.png" alt="Solución gráfica">
 
-En movimiento:
-
-<p align="center">
-<img width="400" alt="Captura de pantalla 2023-05-06 a las 23 43 14" src="https://user-images.githubusercontent.com/91721764/236861272-6c031f50-8088-45a8-9637-c4a6525953a2.png" alt="Solución gráfica">
-
-
  
 ### Ejemplo EDP de Laplace<a name="8"></a>
 
