@@ -9,6 +9,7 @@
     - [Ecuación de ondas](#6)
     - [Ecuación del calor](#7)
     - [Ecuación de Laplace](#8)
+6) [Series de Fourier](#9)
 
 ---
 
@@ -740,7 +741,7 @@ $$
 m^2 = -\lambda \implies m = \pm\sqrt{-\lambda}
 $$	
 
-1) __Caso 1:__ $-\lambda = 0$:
+1) __Caso 1__ $-\lambda = 0$:
 
 La solución es trivial:
 
@@ -759,7 +760,7 @@ Y(π) = πC_{1} = 0
 \right. \implies C_{1} = C_{2} = 0
 $$
 
-2) __Caso 2:__ $-\lambda > 0$:
+2) __Caso 2__ $-\lambda > 0$:
 
 La solución es una suma de fuciones hiperbólicas:
 														
@@ -778,7 +779,7 @@ Y(π) = C_{2}senh(\sqrt{|\lambda|}π) = 0  \lambda = 0
 \right. \implies C_{1} = C_{2} = 0
 $$
 	
-3) __Caso 3:__ $-\lambda < 0$:
+3) __Caso 3__ $-\lambda < 0$:
 
 Nos queda:
 
@@ -949,7 +950,7 @@ Podemos observar que las condiciones de contorno forman un cuadrado donde se pro
 <img width="400" alt="Captura de pantalla 2023-05-13 a las 19 31 39" src="https://github.com/pelahumi/TrabajoEDP/assets/91721764/b9891cd2-7d2c-45c6-9424-01fe974bdfc0">
 
 
-## Series de Fourier
+## Series de Fourier<a name="9"></a>
 Como extra se ha hecho una introducción de las series de Fourier, así como un ejemplo resuelto de las mismas.
 
 ### Definición
@@ -958,7 +959,7 @@ Las series de Fourier son una herramienta utilizada para representar funciones p
 La idea se basa en que cualquier función periódica se puede expresar en la base de Fourier:
 
 $$
-\beta_{F} = \llave1 \frac{1}{\sqrt{2}}, cos(\frac{2nπx}{b-a}), sen(\frac{2nπx}{b-a})} \llave2
+\beta_{F} = [ \frac{1}{\sqrt{2}}, cos(\frac{2nπx}{b-a}), sen(\frac{2nπx}{b-a}) ]
 $$
 
 Donde $a$ y $b$ son los extremos inferior y superior del intervalo respectivamente. Para expresar una función en una base necesitamos las coordenadas de la función en dicha base. Para calcular los coeficientes de Fourier:
@@ -986,7 +987,7 @@ Calcular la serie de Fourier para la función:
 
 $$
 \begin{array}{ll}
-f(x) = x^2(1-x) && \text{$0≤x≤2}
+f(x) = x^2(1-x) && \text{$0≤x≤2$}
 \end{array}
 $$
 
@@ -999,18 +1000,18 @@ $$
 En este ejercicio la serie de Fourier es la siguiente:
 
 $$
-\beta_{F} = \llave1 \frac{1}{\sqrt{2}}, cos(nπx), sen(nπx) \llave2
+\beta_{F} = [ \frac{1}{\sqrt{2}}, cos(nπx), sen(nπx) ]
 $$
 
 Calculamos los coeficientes de Fourier:
 
-1) __a_{0}:__
+1) __a_{0}:
 
 $$
 a_{0} = ∫_0^2 \frac{1}{\sqrt{2}}x^2(1-x)dx = \frac{1}{\sqrt{2}}[\frac{2x^3}{3}-\frac{x^4}{4}]_{0}^{2} = \frac{4}{3\sqrt{2}}
 $$
 
-2) __a_{n}:__
+2) __a_{n}:
 
 $$
 a_{n} = ∫_0^2 x^2(1-x)cos(nπx)dx
@@ -1022,7 +1023,7 @@ $$
 a_{n} = \frac{-4}{n^2π^2}
 $$
 
-2) __b_{n}:__
+3) __b_{n}:
 
 $$
 b_{n} = ∫_0^2 x^2(1-x)sen(nπx)dx
